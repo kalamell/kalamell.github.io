@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>ฟังก์ชั่นเพิ่มยอดขาย</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="ทรู สมาร์ต เมอร์ชันต์, แอปเดียว ช่วยได้, แอปช่วยขาย, ยิ่งขาย, ยิ่งรวย, ช่วยได้ในแอปเดียว, ตัวช่วยพ่อค้า, ตัวช่วยแม่ค้า,  True Smart Merchant, ดาวน์โหลดแอปทรู, ฟรีโปรโมทร้านค้า, เพิ่มยอดขาย">
+    <meta name="description" content="แอปฯ ที่ช่วยจัดการร้านค้าของคุณ ให้สะดวก ง่าย ยิ่งขึ้น">
+    
+    <!-- Facebook and Twitter integration -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ฟังก์ชั่นเพิ่มยอดขาย"/>
+  <meta property="og:site_name" content="ทรู สมาร์ต เมอร์ชันต์ ผู้ช่วยร้านค้ายุคใหม่" />
+  <meta property="og:description" content="แอปฯ ที่ช่วยจัดการร้านค้าของคุณ ให้สะดวก ง่าย ยิ่งขึ้น" />
+  <meta property="og:image" content="https://www.trueyou.co.th/truesmartmerchant/assets/images/truesmartmerchant.jpg?v=2"/>
+  <meta property="og:url" content="https://www.trueyou.co.th/truesmartmerchant/feature.html"/>
+  <meta name="twitter:title" content="ฟังก์ชั่นเพิ่มยอดขาย" />
+  <meta name="twitter:description" content="แอปฯ ที่ช่วยจัดการร้านค้าของคุณ ให้สะดวก ง่าย ยิ่งขึ้น" >
+  <meta name="twitter:image" content="https://www.trueyou.co.th/truesmartmerchant/assets/images/truesmartmerchant.jpg?v=2" />
+  <meta name="twitter:url" content="https://www.trueyou.co.th/truesmartmerchant/feature.html" />
+  <meta name="twitter:card" content="summary" />
+
+
+    <link rel="icon" type="image/png" href="assets/images/00-share/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/style/vegas.min.css">
+    <link href="assets/style/main.css?v=12" rel="stylesheet" type="text/css">
+    <link href="assets/style/true.css" rel="stylesheet" type="text/css">
+
+    <!-- Start: Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-86733131-19', 'auto');
+      ga('send', 'pageview','True Smart Merchant Microsite : หน้าหลัก');
+    </script>
+    <!-- End: Google Analytics -->
+
+    <!-- Facebook Pixel Code -->
+    <script>!function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '857972641064733'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=857972641064733&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+  </head>
+  <body>
+      <div class="loading">
+          <div class="loading-wrap">
+            <div class="two"></div>
+          </div>
+        </div>
+    <header id="header">
+      <div class="wrapper header">
+        <div class="top bg-color_red"></div>
+        <div class="container flex-wrap">
+          <div class="app bg-color_red"><a href="index.html"><img src="assets/images/00-share/app.png" alt=""></a></div>
+          <div class="hamberger flex-wrap"><span></span><span></span><span></span></div>
+          <nav>
+            <ul class="nav">
+              <li><a href="index.html">หน้าหลัก</a></li>
+              <li class="active"><a href="feature.html">บริการเด่น</a></li>
+              <li><a href="howto.html">เริ่มใช้แอป</a></li>
+              <li><a href="activities.html">กิจกรรมพิเศษ</a></li>
+              <li><a href="faq.html">คำถามที่พบบ่อย</a></li>
+              <li><a href="">ดาวน์โหลดแอป</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div id="feature">
+      <section class="wrapper banner-page">
+        <div class="container">
+          <div class="text-wrap">
+            <div class="text os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">
+              <h1 class="bold">ทำไมต้องมี</h1>
+              <h1 class="bold">ทรู สมาร์ต เมอร์ชันต์</h1>
+              <h4 class="bold">ผู้ช่วยร้านค้ายุคใหม่ เงินเข้าปุ๊ปรู้ปั๊ป รับพอยท์ทันที</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrapper function">
+        <div class="container">
+          <div class="text-title-page">
+            <h3 class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".5s">ฟังก์ชั่นเพิ่มยอดขาย</h3>
+            <h6 class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1s">แอปฯ ที่ช่วยจัดการร้านค้าของคุณ ให้สะดวก ง่าย ยิ่งขึ้น</h6>
+            <div class="function-remark os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.5s">
+              <p>***เฉพาะร้านค้าที่สมัครเป็นพันธมิตรร้านค้า และให้สิทธิพิเศษกับทรูยู  สามารถใช้ฟังก์ชั่น รายงานยอดขาย, ระบบสะสมแสตมป์, ระบบสมาชิก และระบบ SMS โปรโมทร้านได้</p>
+            </div>
+          </div>
+          <div class="function-wrap flex-wrap">
+            <div class="box">
+              <div class="phone-wrap os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+                <div class="phone"><img src="assets/images/01-home/phone.png" alt="">
+                  <div class="howto-slide-wrap">
+                    <div class="howto-slide-how"><img src="assets/images/02-feature/1.png" alt=""><img src="assets/images/02-feature/2.png" alt=""><img src="assets/images/02-feature/3.png" alt=""><img src="assets/images/02-feature/4.png" alt=""><img src="assets/images/02-feature/5.png" alt=""><img src="assets/images/02-feature/6.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box tab-wrap os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1s">
+              <dl class="group-wrap">
+                <div class="group">
+                  <dt class="active">
+                    <div class="open"><span></span><span></span></div><img src="assets/images/02-feature/icon1.png" alt=""><span class="text">ชำระเงินสะดวกด้วย QR Code</span>
+                  </dt>
+                  <dd>จัดการเรื่องเงินให้ง่ายสแกนปุ๊บ เงินเข้าปั๊บแจ้งเตือนทันที</dd>
+                </div>
+                <div class="group">
+                  <dt>
+                    <div class="open"><span></span><span></span></div><img src="assets/images/02-feature/icon2.png" alt=""><span class="text">โอนเงินเข้าบัญชีพร้อมการแจ้งเตือน</span>
+                  </dt>
+                  <dd>ร้านค้าสามารถโอนรายรับเข้าบัญชีธนาคารใดก็ได้ที่ผูกพร้อมเพย์ ฟรีไม่มีค่าธรรมเนียมไม่มีขั้นต่ำ</dd>
+                </div>
+                <div class="group">
+                  <dt>
+                    <div class="open"><span></span><span></span></div><img src="assets/images/02-feature/icon3.png" alt=""><span class="text">รายงานยอดขายได้ตลอดเวลา แบบ Real time</span>
+                  </dt>
+                  <dd>อยู่ที่ไหนก็เช็คยอดได้ผ่านมือถือทุกที่ ทุกเวลาพร้อมระบบวิเคราะห์และสรุปยอดขายฟรี</dd>
+                </div>
+                <div class="group">
+                  <dt>
+                    <div class="open"><span></span><span></span></div><img src="assets/images/02-feature/icon4.png" alt=""><span class="text">ระบบสะสมแสมตมป์</span>
+                  </dt>
+                  <dd>ซื้อสินค้าหรือบริการเมื่อไหร่ก็สะสมแต้มผ่านแอปพลิเคชันได้ทันที</dd>
+                </div>
+                <div class="group">
+                  <dt>
+                    <div class="open"><span></span><span></span></div><img src="assets/images/02-feature/icon5.png" alt=""><span class="text">ระบบสมาชิก</span>
+                  </dt>
+                  <dd>เป็นสมาชิกร้านค้าพร้อมรับส่วนลดพิเศษผ่านแอปพลิเคชันไม่ต้องเสียเวลาทำบัตรสมาชิก</dd>
+                </div>
+                <div class="group">
+                  <dt>
+                    <div class="open"><span></span><span></span></div><img src="assets/images/02-feature/icon6.png" alt=""><span class="text">ระบบ SMS โปรโมทร้าน</span>
+                  </dt>
+                  <dd>ส่ง sms หาลูกค้าของร้านค้าฟรี</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrapper vdo">
+        <div class="container">
+          <div class="text-title-page">
+            <h3 class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">เสียงตอบรับจากร้านค้าที่เข้าร่วมโครงการ</h3>
+          </div>
+          <div class="vdo-wrap os-animation" data-os-animation="fadeIn" data-os-animation-delay=".3s">
+            <div class="slider-for">
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/u_yaPN6qVH0?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p1.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้านคอฟฟี่ ดี ไทม์ (ท่าเรือวังหลัง)</p>
+                        <p><span>เจ้าของชื่อ : คุณปัน</span></p>
+                      </div>
+                    </div>
+                    <p>“มันง่าย มันเร็ว และให้ข้อมูลกับผู้ค้าและลูกค้าอีกด้วย”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/vkvu0V6iu0Q?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p2.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้านขนมจีนคุณแม่ สูตร 80 ปี (ย่านวังหลัง)</p>
+                        <p><span>เจ้าของชื่อ : คุณวสนา</span></p>
+                      </div>
+                    </div>
+                    <p>“ทำให้ลูกค้าได้อะไรมากกว่าที่คิด แถมยังได้ทรูพอยท์เอาไว้แลกของได้อีกด้วย”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/8ioJje1ME04?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p3.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้านผัดไทย เฉลิมบุรี</p>
+                        <p><span>เจ้าของชื่อ : คุณหน่อย</span></p>
+                      </div>
+                    </div>
+                    <p>“ปรโมทร้านให้เราฟรีด้วย ไม่เสียตังค์ มีทั้ง Facebook มีทั้ง YouTube และก็ SMS”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/Uz7jmFccChU?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p4.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้านข้าวเหนียวมะม่วง เฉลิมบุรี</p>
+                        <p><span>เจ้าของชื่อ : คุณแก้ว</span></p>
+                      </div>
+                    </div>
+                    <p>“สะดวกสบายสำหรับลูกค้าค่ะ ไม่ต้องพกเงินสด จ่ายผ่านแอปได้เลย”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/fkeB96GGaMo?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p5.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้านก๋วยเตี๋ยวชามยักษ์ (ตลาดนางเลิ้ง)</p>
+                        <p><span>เจ้าของชื่อ : คุณประสิทธิ์</span></p>
+                      </div>
+                    </div>
+                    <p>“ทุกการใช้จ่าย 25 บาท ก็จะได้ 1 ทรูพอยท์ ทั้งร้านค้าและลูกค้า สามารถนำทรูพอยท์ไปแลกซื้อได้ด้วย”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/AMOlc0uY-Cs?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p6.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้านขนมไทย ร้านคุณยาย (ตลาดนางเลิ้ง)</p>
+                        <p><span>เจ้าของชื่อ : คุณยุ้ย</span></p>
+                      </div>
+                    </div>
+                    <p>“เราได้โปรโมทร้านฟรี สะดวกกับลูกค้า ไม่ต้องพกเงินสด สแกนคิวอาร์โค้ดจ่ายได้เลย”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/NjOz2-3yhog?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p7.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้านจรินทิพย์ เมี่ยงปลาเผา (ตลาดนกฮูก เลี่ยงเมืองนนท์)</p>
+                        <p><span>เจ้าของชื่อ : คุณหนึ่ง</span></p>
+                      </div>
+                    </div>
+                    <p>“ลูกค้ามาถึงก็สั่งได้เลย จ่ายเงินง่ายๆ แค่สแกนเอง”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/vvb__TyS2oM?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p8.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้านก๋วยเตี๋ยวเรือรสซิ่ง (ใต้ทางด่วนงามวงศ์วาน)</p>
+                        <p><span>เจ้าของชื่อ : คุณนิก</span></p>
+                      </div>
+                    </div>
+                    <p>“ไม่ต้องวุ่นวายเรื่องทอนเงิน สะดวกสบายมากๆ”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/ImRQ9ug-DJs?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p9.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้านสเต็ก For U (College Town @ลาดกระบัง)</p>
+                        <p><span>เจ้าของชื่อ : คุณโบว์</span></p>
+                      </div>
+                    </div>
+                    <p>“ลูกค้าจ่ายเงินง่ายมาก แค่สแกน QR Code ไม่ยุ่งยากเลย”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail flex-wrap">
+                <div class="box vid">
+                  <div class="videoWrapper">
+                    <iframe class="yt-player" width="560" height="315" src="https://www.youtube.com/embed/WdmvlgYpMCM?enablejsapi=1&amp;controls=1&amp;fs=0&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="box vid-text">
+                  <div class="vid-text-wrap">
+                    <div class="pic-wrap flex-wrap">
+                      <div class="box"><img src="assets/images/02-feature/p10.png" alt=""></div>
+                      <div class="box who">
+                        <p>ร้าน A&P ไก่ยำแซ่บ (ซอยเกกีงาม 4 - ลาดกระบัง)</p>
+                        <p><span>เจ้าของชื่อ : คุณโรจ</span></p>
+                      </div>
+                    </div>
+                    <p>“ไม่ต้องยุ่งยากเรื่องทอนเงิน ลองใช้ E-Stamp ลูกค้าก็ไม่ต้องกังวลเรื่องบัตรหาย สบายเลย!”</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-nav">
+              <div class="vid-list"><img src="assets/images/02-feature/t1.jpg" alt=""></div>
+              <div class="vid-list"><img src="assets/images/02-feature/t2.jpg" alt=""></div>
+              <div class="vid-list"><img src="assets/images/02-feature/t3.jpg" alt=""></div>
+              <div class="vid-list"><img src="assets/images/02-feature/t4.jpg" alt=""></div>
+              <div class="vid-list"><img src="assets/images/02-feature/t5.jpg" alt=""></div>
+              <div class="vid-list"><img src="assets/images/02-feature/t6.jpg" alt=""></div>
+              <div class="vid-list"><img src="assets/images/02-feature/t7.jpg" alt=""></div>
+              <div class="vid-list"><img src="assets/images/02-feature/t8.jpg" alt=""></div>
+              <div class="vid-list"><img src="assets/images/02-feature/t9.jpg" alt=""></div>
+              <div class="vid-list"><img src="assets/images/02-feature/t10.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrapper promote">
+        <div class="container">
+          <div class="text-title-page">
+            <h3 class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">โปรโมทร้านค้าผ่านช่องทางต่างๆ ของทรูฟรี!</h3>
+            <h6 class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".2s">ทรูช่วยคุณส่งเสริมการตลาดให้กับร้านค้าแบบครบวงจรผ่านช่องทางต่างๆ</h6>
+          </div>
+          <div class="promote-slide os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".5s">
+            <div class="promote-box">
+              <div class="number"><img src="assets/images/02-feature/pro1.png" alt=""><img src="assets/images/02-feature/down.png" alt=""></div>
+              <div class="promotion-content">
+                <div class="pic-hover"><img src="assets/images/02-feature/promo1.png"></div>
+                <div class="promo-text">
+                  <h5>Online Advertising</h5>
+                  <div class="content-text">
+                    <p>ป้ายโฆษณา ที่เว็บไซต์ และแอป TrueYou</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="promote-box">
+              <div class="number bottom"><img src="assets/images/02-feature/pro2.png" alt=""><img class="up" src="assets/images/02-feature/up.png" alt=""></div>
+              <div class="promotion-content">
+                <div class="pic-hover"><img src="assets/images/02-feature/promo2.png"></div>
+                <div class="promo-text">
+                  <h5>Line Broadcast</h5>
+                  <div class="content-text">
+                    <p>โปรโมทผ่าน LINE ของ TrueYou</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="promote-box">
+              <div class="number"><img src="assets/images/02-feature/pro3.png" alt=""><img src="assets/images/02-feature/down.png" alt=""></div>
+              <div class="promotion-content">
+                <div class="pic-hover"><img src="assets/images/02-feature/promo3.png"></div>
+                <div class="promo-text">
+                  <h5>Facebook</h5>
+                  <div class="content-text">
+                    <p>โพสต์ร้านค้าคุณผ่าน TrueYou Facebook</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="promote-box">
+              <div class="number bottom"><img src="assets/images/02-feature/pro4.png" alt=""><img class="up" src="assets/images/02-feature/up.png" alt=""></div>
+              <div class="promotion-content">
+                <div class="pic-hover"><img src="assets/images/02-feature/promo4.png"></div>
+                <div class="promo-text">
+                  <h5>SMS Marketing</h5>
+                  <div class="content-text">
+                    <p>แนะนำร้านค้าไปยังลูกค้าทรูทั้งหมดผ่าน SMS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="promote-box">
+              <div class="number"><img src="assets/images/02-feature/pro5.png" alt=""><img src="assets/images/02-feature/down.png" alt=""></div>
+              <div class="promotion-content">
+                <div class="pic-hover"><img src="assets/images/02-feature/promo5.png"></div>
+                <div class="promo-text">
+                  <h5>YouTube</h5>
+                  <div class="content-text">
+                    <p>VDO ผ่าน TrueYou Youtube</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="promote-box">
+              <div class="number bottom"><img src="assets/images/02-feature/pro6.png" alt=""><img class="up" src="assets/images/02-feature/up.png" alt=""></div>
+              <div class="promotion-content">
+                <div class="pic-hover"><img src="assets/images/02-feature/promo6.png"></div>
+                <div class="promo-text">
+                  <h5>TrueVisions</h5>
+                  <div class="content-text">
+                    <p>สื่อโฆษณาผ่าน TrueVisions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+        <div class="wrapper footer">
+          <div class="contact">
+            <div class="container">
+              <div class="flex-wrap">
+                <div class="box">
+                  <p>ทรู สมาร์ต เมอร์ชันต์</p><a href="tel:028582928">02-858-2928</a>
+                </div>
+                <div class="box">
+                  <ul>
+                    <li><a href="tel:028582928">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path class="bg-logo" d="M436.992,74.953c-99.989-99.959-262.08-99.935-362.039,0.055s-99.935,262.08,0.055,362.039s262.08,99.935,362.039-0.055c48.006-48.021,74.968-113.146,74.953-181.047C511.986,188.055,485.005,122.951,436.992,74.953z M387.703,356.605c-0.011,0.011-0.022,0.023-0.034,0.034v-0.085l-12.971,12.885c-16.775,16.987-41.206,23.976-64.427,18.432c-23.395-6.262-45.635-16.23-65.877-29.525c-18.806-12.019-36.234-26.069-51.968-41.899c-14.477-14.371-27.483-30.151-38.827-47.104c-12.408-18.242-22.229-38.114-29.184-59.051c-7.973-24.596-1.366-51.585,17.067-69.717l15.189-15.189c4.223-4.242,11.085-4.257,15.326-0.034c0.011,0.011,0.023,0.022,0.034,0.034l47.957,47.957c4.242,4.223,4.257,11.085,0.034,15.326c-0.011,0.011-0.022,0.022-0.034,0.034l-28.16,28.16c-8.08,7.992-9.096,20.692-2.389,29.867c10.185,13.978,21.456,27.131,33.707,39.339c13.659,13.718,28.508,26.197,44.373,37.291c9.167,6.394,21.595,5.316,29.525-2.56l27.221-27.648c4.223-4.242,11.085-4.257,15.326-0.034c0.011,0.011,0.022,0.022,0.034,0.034l48.043,48.128C391.911,345.502,391.926,352.363,387.703,356.605z"></path>
+                            </g>
+                          </g>
+                        </svg></a></li>
+                    <li><a href="https://www.facebook.com/TrueSmartMerchant">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path class="bg-logo" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659   S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z" data-original="#3B5998" data-old_color="#030303"></path>
+                              <path style="fill:#FFFFFF" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366C154.791,104.556,158.341,100.277,163.394,100.277z" data-original="#FFFFFF" data-old_color="#262222"></path>
+                            </g>
+                          </g>
+                        </svg></a></li>
+                    <li><a href="https://line.me/R/ti/p/%40cnd1336v">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <g>
+                                <circle class="bg-logo" cx="256" cy="256" r="256" data-original="#000000" data-old_color="#060606"></circle>
+                                <path class="active-path" style="fill:#FFFFFF" d="M401.272,248.746c0.672-3.544,1.005-6.525,1.158-8.864c0.253-3.86-0.034-9.59-0.138-11.385  c-3.555-61.838-67.712-111.104-146.335-111.104c-80.905,0-146.491,52.167-146.491,116.519c0,59.149,55.408,108.001,127.193,115.515  c4.389,0.459,7.552,4.422,7.066,8.806l-3.056,27.51c-0.693,6.244,5.763,10.788,11.423,8.056  c60.649-29.27,96.915-59.382,118.57-85.468c3.941-4.748,16.791-22.75,19.411-27.479C395.635,270.812,399.469,260.03,401.272,248.746  z" data-original="#FFFFFF"></path>
+                                <path class="active-path" style="fill:#FFFFFF" d="M402.292,228.495c-3.555-61.838-67.712-111.104-146.335-111.104c-0.179,0-0.353,0.01-0.533,0.01  v274.765c58.639-28.755,93.982-58.235,115.238-83.839c3.941-4.746,16.791-22.75,19.411-27.479  c5.561-10.038,9.395-20.818,11.198-32.104c0.672-3.544,1.005-6.525,1.158-8.864C402.684,236.022,402.396,230.29,402.292,228.495z" data-original="#FFFFFF" data-old_color="#ffffff"></path>
+                                <g>
+                                  <path class="bg-logo" d="M175.407,257.514v-49.08c0-4.139-3.355-7.494-7.494-7.494l0,0c-4.139,0-7.494,3.355-7.494,7.494   v56.573c0,4.139,3.355,7.494,7.494,7.494h29.974c4.139,0,7.494-3.355,7.494-7.494l0,0c0-4.139-3.355-7.494-7.494-7.494H175.407z" data-original="#000000" data-old_color="#010101"></path>
+                                  <path class="bg-logo" d="M221.629,272.499h-3.275c-3.234,0-5.856-2.622-5.856-5.856v-59.849c0-3.234,2.622-5.856,5.856-5.856   h3.275c3.234,0,5.856,2.622,5.856,5.856v59.849C227.485,269.879,224.863,272.499,221.629,272.499z" data-original="#000000" data-old_color="#010101"></path>
+                                  <path class="bg-logo" d="M282.183,208.434v34.561c0,0-29.925-39.033-30.382-39.546c-1.429-1.605-3.537-2.591-5.875-2.503   c-4.075,0.155-7.202,3.717-7.202,7.796v56.265c0,4.139,3.355,7.494,7.494,7.494l0,0c4.139,0,7.494-3.355,7.494-7.494v-34.351   c0,0,30.38,39.372,30.827,39.796c1.326,1.255,3.105,2.031,5.07,2.048c4.162,0.038,7.563-3.643,7.563-7.804v-56.261   c0-4.139-3.355-7.494-7.494-7.494l0,0C285.539,200.94,282.183,204.295,282.183,208.434z" data-original="#000000" data-old_color="#010101"></path>
+                                  <path class="bg-logo" d="M353.368,208.434L353.368,208.434c0-4.139-3.355-7.494-7.494-7.494h-29.974   c-4.139,0-7.494,3.355-7.494,7.494v56.573c0,4.139,3.355,7.494,7.494,7.494h29.974c4.139,0,7.494-3.355,7.494-7.494l0,0   c0-4.139-3.355-7.494-7.494-7.494h-22.48v-13.3h22.48c4.139,0,7.494-3.355,7.494-7.494l0,0c0-4.139-3.355-7.494-7.494-7.494h-22.48   v-13.3h22.48C350.013,215.926,353.368,212.571,353.368,208.434z" data-original="#000000" data-old_color="#010101"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg></a></li>
+                    <li><a href="https://www.youtube.com/user/trueyouchannel">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 473.931 473.931" style="enable-background:new 0 0 473.931 473.931;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <circle class="bg-logo" cx="236.966" cy="236.966" r="236.966" data-original="#030303" data-old_color="#030303"></circle>
+                              <path class="bg-logo" d="M404.518,69.38c92.541,92.549,92.549,242.593,0,335.142c-92.541,92.541-242.593,92.545-335.142,0  L404.518,69.38z" data-original="#000000" data-old_color="#020202"></path>
+                              <path class="bg-logo" d="M469.168,284.426L351.886,167.148l-138.322,15.749l-83.669,129.532l156.342,156.338  C378.157,449.322,450.422,376.612,469.168,284.426z" data-original="#030303" data-old_color="#030303"></path>
+                              <path style="fill:#FFFFFF" d="M360.971,191.238c0-19.865-16.093-35.966-35.947-35.966H156.372c-19.85,0-35.94,16.105-35.94,35.966  v96.444c0,19.865,16.093,35.966,35.94,35.966h168.649c19.858,0,35.947-16.105,35.947-35.966v-96.444H360.971z M216.64,280.146  v-90.584l68.695,45.294L216.64,280.146z" data-original="#FFFFFF"></path>
+                            </g>
+                          </g>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                          <g>
+                            <g>
+                              <path class="bg-logo" d="M306,612c-28.152,0-55.284-3.672-81.396-11.016c-26.112-7.347-50.49-17.646-73.134-30.906s-43.248-29.172-61.812-47.736c-18.564-18.562-34.476-39.168-47.736-61.812c-13.26-22.646-23.562-47.022-30.906-73.135C3.672,361.284,0,334.152,0,306s3.672-55.284,11.016-81.396s17.646-50.49,30.906-73.134s29.172-43.248,47.736-61.812s39.168-34.476,61.812-47.736s47.022-23.562,73.134-30.906S277.848,0,306,0c42.024,0,81.702,8.058,119.034,24.174s69.768,37.944,97.308,65.484s49.368,59.976,65.484,97.308S612,263.976,612,306c0,28.152-3.672,55.284-11.016,81.396c-7.347,26.109-17.646,50.487-30.906,73.134c-13.26,22.644-29.172,43.248-47.736,61.812c-18.562,18.564-39.168,34.479-61.812,47.736c-22.646,13.26-47.022,23.562-73.136,30.906C361.284,608.328,334.152,612,306,612zM453.492,179.928H163.404c-2.856,0-5.304,0.918-7.344,2.754s-3.06,4.386-3.06,7.65v32.436c0,1.632,0.612,2.448,1.836,2.448l152.388,86.904l1.227,0.612c0.813,0,1.428-0.204,1.836-0.612l147.492-86.904c0.813-0.408,1.428-0.612,1.836-0.612c0.405,0,1.02-0.204,1.836-0.612c1.632,0,2.448-0.816,2.448-2.448v-31.212c0-3.264-1.021-5.814-3.063-7.65S456.348,179.928,453.492,179.928z M245.412,310.284c0.408-0.408,0.612-1.021,0.612-1.836c0-1.227-0.408-1.836-1.224-1.836l-87.516-50.185c-1.224-0.408-2.244-0.408-3.06,0c-0.816,0-1.224,0.612-1.224,1.836v131.58c0,1.227,0.612,2.04,1.836,2.448h1.224c0.816,0,1.224-0.204,1.224-0.612L245.412,310.284z M351.9,320.076c-0.408-1.227-1.431-1.428-3.063-0.612l-33.66,19.584c-4.08,2.448-8.361,2.448-12.852,0l-29.376-16.521c-1.224-0.816-2.244-0.816-3.06,0l-111.996,104.04c-0.408,0.405-0.612,1.224-0.612,2.445c0,0.408,0.408,1.021,1.224,1.836c2.448,0.816,4.08,1.227,4.896,1.227H450.43c0.816,0,1.635-0.408,2.448-1.227c0-1.632-0.204-2.649-0.612-3.06L351.9,320.076z M462.06,253.98h-2.445l-83.232,49.572c-0.813,0-1.224,0.612-1.224,1.836c-0.408,0.408-0.204,1.02,0.609,1.833L459,397.188c0.816,0.816,1.428,1.227,1.836,1.227h1.224c1.227-1.227,1.839-2.04,1.839-2.448V256.429C463.896,255.612,463.284,254.796,462.06,253.98z"></path>
+                            </g>
+                          </g>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copy bg-color_red">
+            <p>&copy; Copyright 2018 ทรู สมาร์ต เมอร์ชันต์ -TRUE SMART MERCHANT</p>
+          </div>
+        </div>
+    </footer><a class="gototop" href="#header"></a>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js" type="text/javascript"></script>
+    <script>
+      $('dt').on('click', function(e){
+      	e.preventDefault();
+      	$('dt').removeClass('active');
+      	$(this).addClass('active');
+      })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollToFixed/1.0.8/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+    <script src="assets/script/waypoints.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script src="assets/script/vegas.min.js" type="text/javascript"></script>
+    <script src="assets/script/main.js" type="text/javascript"></script>
+    <script>var $oldjQuery = $.noConflict(true);</script>
+  </body>
+</html>

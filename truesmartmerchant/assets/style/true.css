@@ -1,0 +1,269 @@
+/*//////////////////////////////////////
+
+global
+
+//////////////////////////////////////*/
+
+html {font-size: 62.5%}
+
+h1 {font-size: 7.5rem;}
+h2 {font-size: 6.5rem;}
+h3 {font-size: 4.8rem;}
+h4 {font-size: 3.6rem;}
+h4.bold {font-size: 3.8rem;}
+h5 {font-size: 2.8rem;}
+h6 {font-size: 1.6rem;}
+p {font-size: 2.4rem;}
+a {font-size: 2.4rem;}
+dl dt {font-size: 2.4rem;}
+dl dd {font-size: 2.4rem;}
+input {font-size: 2.4rem;}
+button {font-size: 2.4rem;}
+.container {width: 1200px;}
+.fa {font-size: 2.4rem;}
+
+
+/*text in video's detail*/
+.vdo .vdo-wrap .slider-for .video-detail .vid-text p {font-size: 2.4rem;}
+
+/*sub title*/
+.text-title-page h6 {font-size: 2.6rem;}
+
+/*go to top button*/
+.gototop:after {font-size: 3.6rem;}
+
+
+
+
+/*//////////////////////////////////////
+
+specific in page
+
+//////////////////////////////////////*/
+
+/*home page*/
+#landing .howto .howto-wrap .howto-btn>* {font-size: 2.8rem;}
+
+
+/*feature page*/
+#feature .function .function-wrap .tab-wrap .text {font-size: 2.6rem;}
+#feature .function .function-wrap .tab-wrap dl dd {font-size: 2.2rem;}
+#feature .vdo .vdo-wrap .video-detail .vid-text .vid-text-wrap .pic-wrap .who p {font-size: 2rem;}
+#feature .promote .promote-slide .promote-box .promotion-content .content-text p {font-size: 2rem;}
+
+
+/*activities page*/
+#activities .activity .slide-wrap-activity .slide-activity .detail .detail-text h5 {font-size: 2.8rem;}
+#activities .activity .slide-wrap-activity .slide-activity .detail .detail-text p {font-size: 2rem}
+#activities .activity .slide-wrap-activity .slide-activity .detail .button a {font-size: 2rem;}
+
+
+/*activity-detail page*/
+#activities.activity-detail .activity-detail-wrap .text-title-page h3 {/*font-size: 4.8rem;*/}
+#activities.activity-detail .activity-detail-wrap .text-title-page.ac h4 {font-size: 4.2rem;}
+#activities.activity-detail .activity-title h5 {font-size: 3.2rem;}
+#activities.activity-detail .activity-detail-wrap .text-title-page h6 {font-size: 3rem;}
+#activities.activity-detail .activity-title-sub h6 {font-size: 2.8rem;}
+#activities.activity-detail .activity-list ol li {font-size: 2.4rem;}
+
+
+/*faq page*/
+#faq .banner-page .text-wrap .text h4 {/*font-size: 3.6rem;*/}
+#faq .faq-wrapper .faq-page-wrap .tabs ul li span {font-size: 2.4rem;}
+#faq .faq-wrapper .faq-page-wrap .tab-topic h5 {font-size: 2.8rem;}
+#faq .faq-wrapper .faq-page-wrap .tabs-detail ul li dt {font-size: 2.4rem;}
+#faq .faq-wrapper .faq-page-wrap .tabs-detail ul li dd {font-size: 2.2rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query for tablet*/
+@media (max-width: 70em) {
+
+/*//////////////////////////////////////
+
+global
+
+//////////////////////////////////////*/
+
+html {/*font-size: 62.5%*/}
+
+h1 {font-size: 3rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 3.6rem;}
+h4 {font-size: 1.5rem;}
+h4.bold {font-size: 1.8rem;}
+h5 {/*font-size: 2.8rem;*/}
+h6 {/*font-size: 1.6rem;*/}
+p {font-size: 1.8rem;}
+a {font-size: 1.8rem;}
+dl dt {/*font-size: 2rem;*/}
+dl dd {/*font-size: 1.8rem;*/}
+input {font-size: 1.8rem;}
+button {font-size: 1.8rem;}
+.container {width: 85%;}
+.fa {/*font-size: 2.4rem;*/}
+
+
+/*text in video's detail*/
+.vdo .vdo-wrap .slider-for .video-detail .vid-text p {/*font-size: 2.4rem;*/}
+
+/*sub title*/
+.text-title-page h6 {/*font-size: 2.6rem;*/}
+
+/*go to top button*/
+.gototop:after {/*font-size: 3.6rem;*/}
+
+
+
+
+/*//////////////////////////////////////
+
+specific in page
+
+//////////////////////////////////////*/
+
+/*home page*/
+#landing .howto .howto-wrap .howto-btn>* {/*font-size: 2.8rem;*/}
+
+
+/*feature page*/
+#feature .function .function-wrap .tab-wrap .text {/*font-size: 2.6rem;*/}
+#feature .function .function-wrap .tab-wrap dl dd {/*font-size: 2.2rem;*/}
+#feature .vdo .vdo-wrap .video-detail .vid-text .vid-text-wrap .pic-wrap .who p {/*font-size: 2rem;*/}
+#feature .promote .promote-slide .promote-box .promotion-content .content-text p {/*font-size: 2rem;*/}
+
+
+/*activities page*/
+#activities .activity .slide-wrap-activity .slide-activity .detail .detail-text h5 {/*font-size: 2.8rem;*/}
+#activities .activity .slide-wrap-activity .slide-activity .detail .detail-text p {/*font-size: 2rem*/}
+#activities .activity .slide-wrap-activity .slide-activity .detail .button a {/*font-size: 2rem;*/}
+
+
+/*activity-detail page*/
+#activities.activity-detail .activity-detail-wrap .text-title-page h3 {font-size: 3.6rem;}
+#activities.activity-detail .activity-detail-wrap .text-title-page.ac h4 {/*font-size: 4.2rem;*/}
+#activities.activity-detail .activity-title h5 {/*font-size: 3.2rem;*/}
+#activities.activity-detail .activity-detail-wrap .text-title-page h6 {/*font-size: 3rem;*/}
+#activities.activity-detail .activity-title-sub h6 {/*font-size: 2.8rem;*/}
+#activities.activity-detail .activity-list ol li {/*font-size: 2.4rem;*/}
+
+
+/*faq page*/
+#faq .banner-page .text-wrap .text h4 {font-size: 2.8rem;}
+#faq .faq-wrapper .faq-page-wrap .tabs ul li span {/*font-size: 2.4rem;*/}
+#faq .faq-wrapper .faq-page-wrap .tab-topic h5 {/*font-size: 2.8rem;*/}
+#faq .faq-wrapper .faq-page-wrap .tabs-detail ul li dt {/*font-size: 2.4rem;*/}
+#faq .faq-wrapper .faq-page-wrap .tabs-detail ul li dd {/*font-size: 2.2rem;*/}
+
+}
+
+/*media query for mobile*/
+@media (max-width: 40em) {
+
+
+/*//////////////////////////////////////
+
+global
+
+//////////////////////////////////////*/
+
+html {/*font-size: 62.5%*/}
+
+h1 {/*font-size: 3rem;*/}
+h2 {/*font-size: 2.4rem;*/}
+h3 {font-size: 3.2rem;}
+h4 {font-size: 1.5rem;}
+h4.bold {font-size: 1.8rem;}
+h5 {font-size: 2rem;}
+h6 {/*font-size: 1.6rem;*/}
+p {/*font-size: 1.8rem;*/}
+a {/*font-size: 1.8rem;*/}
+dl dt {/*font-size: 2rem;*/}
+dl dd {/*font-size: 1.8rem;*/}
+input {/*font-size: 1.8rem;*/}
+button {/*font-size: 1.8rem;*/}
+.container {width: 90%;}
+.fa {/*font-size: 2.4rem;*/}
+
+
+/*text in video's detail*/
+.vdo .vdo-wrap .slider-for .video-detail .vid-text p {font-size: 2rem;}
+
+/*sub title*/
+.text-title-page h6 {font-size: 2.2rem;}
+
+/*go to top button*/
+.gototop:after {/*font-size: 3.6rem;*/}
+
+
+
+
+/*//////////////////////////////////////
+
+specific in page
+
+//////////////////////////////////////*/
+
+/*home page*/
+#landing .howto .howto-wrap .howto-btn>* {font-size: 2rem;}
+
+
+/*feature page*/
+#feature .function .function-wrap .tab-wrap .text {font-size: 1.8rem;}
+#feature .function .function-wrap .tab-wrap dl dd {font-size: 1.8rem;}
+#feature .vdo .vdo-wrap .video-detail .vid-text .vid-text-wrap .pic-wrap .who p {font-size: 1.6rem;}
+#feature .promote .promote-slide .promote-box .promotion-content .content-text p {font-size: 1.8rem;}
+
+
+/*activities page*/
+#activities .activity .slide-wrap-activity .slide-activity .detail .detail-text h5 {font-size: 2.2rem;}
+#activities .activity .slide-wrap-activity .slide-activity .detail .detail-text p {font-size: 1.8rem}
+#activities .activity .slide-wrap-activity .slide-activity .detail .button a {font-size: 1.8rem;}
+
+
+/*activity-detail page*/
+#activities.activity-detail .activity-detail-wrap .text-title-page h3 {font-size: 3.2rem;}
+#activities.activity-detail .activity-detail-wrap .text-title-page.ac h4 {font-size: 3.2rem;}
+#activities.activity-detail .activity-title h5 {font-size: 2.4rem;}
+#activities.activity-detail .activity-detail-wrap .text-title-page h6 {font-size: 2.4rem;}
+#activities.activity-detail .activity-title-sub h6 {font-size: 2.2rem;}
+#activities.activity-detail .activity-list ol li {font-size: 1.8rem;}
+
+
+/*faq page*/
+#faq .banner-page .text-wrap .text h4 {font-size: 2.8rem;}
+#faq .faq-wrapper .faq-page-wrap .tabs ul li span {font-size: 2.2rem;}
+#faq .faq-wrapper .faq-page-wrap .tab-topic h5 {font-size: 2.4rem;}
+#faq .faq-wrapper .faq-page-wrap .tabs-detail ul li dt {font-size: 2rem;}
+#faq .faq-wrapper .faq-page-wrap .tabs-detail ul li dd {font-size: 1.8rem;}
+
+}
+
+/*media query for mobile*/
+@media (max-width: 320px) {
+
+
+/*//////////////////////////////////////
+
+specific in page
+
+//////////////////////////////////////*/
+
+
+#faq .faq-wrapper .faq-page-wrap .tabs ul li span {font-size: 2rem;}
+#faq .faq-wrapper .faq-page-wrap .tabs ul li .box {font-size: 1.8rem;}
+
+}
