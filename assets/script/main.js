@@ -1,7 +1,4 @@
 'use strict';
-
-
-// preload
 $(window).on("load", function () {
 	setTimeout(function () {
 		$('.loading').fadeOut();
@@ -31,14 +28,10 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 	});
 });
 
-// header-fixed
 $('.header').scrollToFixed();
-
-// header-app
 var lastScrollTop = 0;
 $(window).scroll(function (event) {
 	var st = $(this).scrollTop();
-	// $('.nav, .hamberger').removeClass('active');
 	if (st > lastScrollTop) {
 		$('.gototop').show();
 	} else {
@@ -47,22 +40,10 @@ $(window).scroll(function (event) {
 	lastScrollTop = st;
 });
 
-// header-hamberger
 $('.hamberger').on('click', function () {
 	$('.nav, .hamberger').toggleClass('active');
 });
 
-// home-banner
-// $('.banner').vegas({
-//     slides: [
-//         { src: '../assets/images/01-home/banner.jpg' 
-//     ],
-//     transition: 'fade',
-//     timer: false
-// });
-
-
-// home-vid
 $('.slider-for').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -289,12 +270,6 @@ $('.tabs li').on('click', function (e) {
 	$(tab).fadeIn();
 });
 
-// $('dt').on('click', function(){
-// 	// $('dt').removeClass('active');
-// 	$(this).toggleClass('active');
-// });
-
-
 $('.slide1').slick({
 	centerMode: true,
 	centerPadding: '0px',
@@ -317,11 +292,6 @@ $('.slide2').slick({
 	infinite: true,
 	initialSlide: 0
 });
-
-// $('.slide3').slick({
-// 	slidesToShow: 3,
-// 	infinite: false
-// });
 
 
 $('.slide4').slick({
